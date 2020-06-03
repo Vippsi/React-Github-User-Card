@@ -46,34 +46,9 @@ class App extends React.Component {
         console.log(`Error: ${err}`)
       })
 
-
-     
-        
-      
-
     })}
     
     
-
-    
-    
-  // componentDidUpdate(prevProps, prevState){
-  //   followersArray.map((singleUser)=> {
-      
-  //     if(this.state.singleUser !== prevState.singleUser){
-  //       axios.get(`https://dog.ceo/api/breed/husky/images`)
-  //       .then(res => {
-  //         this.setState({
-  //           users: [...this.state.users, res.data]
-  //         })
-  //       })
-  //   }
-      
-  // }
-  //   )}
-        
-    
-
 
 
 
@@ -83,7 +58,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-    {/* <h1>{console.log(this.state.users[this.state.user])}</h1> */}
+    <h1>Github Users:</h1>
           <div>
     
           {this.state.users.map(user => (
