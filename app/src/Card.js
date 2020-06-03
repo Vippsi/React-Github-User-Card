@@ -39,6 +39,10 @@ const divStyle2 ={
     width:'50%'
 }
 
+const imgStyle={
+    boxShadow: '3px 3px 15px 5px rgba(0,0,0,0.66)'
+}
+
 
 class Card extends React.Component{
 constructor(){
@@ -71,7 +75,7 @@ constructor(){
                 <div className='CardDiv' style={divStyle}>
                     <div className='textDiv' style={textStyle}>
                     <h3>Name: {this.props.user.name}</h3>
-                    <img src={this.props.user.avatar_url}/>
+                    <img style={imgStyle} src={this.props.user.avatar_url}/>
                     <div style={divStyle2}>
                     <p>Username: {this.props.user.login}</p>
                     <p>Location: {this.props.user.location}</p>
